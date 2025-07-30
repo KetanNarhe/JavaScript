@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Call Back function</h2>
+    <script>
+
+        function Calculate(a,b,CallBack)
+        {
+              return CallBack(a,b);
+        }
+
+        function add(x,y)
+        {
+            return x+y;
+        }
+
+         function multi(x,y)
+        {
+            return x*y;
+        }
+        console.log(Calculate(5,5,add));
+        console.log(Calculate(5,5,multi));
+             
+    </script>
+</body>
+</html>
