@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+ <!-- <button onclick="showme()">Click me</button>
+<script>
+   
+
+    function showme()
+    {
+         alert("Button was Clicked");
+    }
+</script> -->
+
+<input type="text" id="username" placeholder="Enter Username:" value="username"><br>
+<input type="text" id="pass" placeholder="Enter Pass:" value="pass"><br>
+
+<button onclick="handleClick()">Click Here</button>  
+
+<script>
+  function handleClick() {
+   
+    let user=document.getElementById("username").value;
+    let pass=document.getElementById("pass").value;
+
+    alert("Username:" + user + "\nPassword: " +pass);
+  
+  }
+</script>
+
+</body>
+</html>
