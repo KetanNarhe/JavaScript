@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    #myButton{
+      padding: 10px 17px;
+      font-size: 18px;
+      background-color: #0000ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+    <h2>Hover over the button</h2>
+
+   <button id="myButton" onmouseover="changeButton()" onmouseout="resetButton()">Hover me</button>
+
+
+    <script>
+
+          function changeButton()
+          {
+            let cbtn=document.getElementById("myButton");
+            cbtn.style.backgroundColor="Orange";
+            cbtn.innerHTML="Thanks!";
+
+          }
+
+          function resetButton()
+          {
+            let rbtn=document.getElementById("myButton");
+            rbtn.style.backgroundColor="blue";
+            rbtn.innerHTML="Hover me";
+          }
+
+    </script>
+
+
+</body>
+</html>
